@@ -1,5 +1,7 @@
 class Application
 
+  attr_accessor :price
+
   def call(env)
     resp = Rack::Response.new
     req = Rack::Request.new(env)
