@@ -9,6 +9,10 @@ class Application
     if req.path == "/items"
       # resp.write "You requested the Items"
       @price
+    elsif
+      req.path != "/items"
+      resp.write "Items not found"
+      resp.status = 400
     else
       resp.write "Route not found"
       resp.status = 404
