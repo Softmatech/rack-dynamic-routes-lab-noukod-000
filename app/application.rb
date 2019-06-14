@@ -10,7 +10,7 @@ class Application
       # resp.write "You requested the Items"
       @price
     else
-      resp.write "Items not found"
+      resp.write "Route not found"
       resp.status = 404
     end
     resp.finish
